@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма</title>
+    <base href="https://up-htmlacademy.github.io/79435-pink/2/">
+</head>
+  <body>
+		<!-- begin header-main  -->
+		<header class="header-main">
+			<section class="header-top-line">
+				<div class="logo"><a href="/">PINK</a></div>
+				<a href="/" class="menu-btn"></a>
+			</section>
+			<h1>Взгляните на самое безбашенное путешествие с Пинк</h1>
+		</header>
+		<!-- end header-main -->
+		<!-- begin pink-form  -->
+		<form class="pink-form" action="/" method="post">
+			<p>
+				Поделитесь своей историей и 
+				получите шанс выиграть ценный 
+				приз — 1000 миль на вашу бонусную карту! 
+				Пожалуйста, заполните
+			</p>
+			<fieldset class="personal-info">
+				<label>имя*<input type="text" placeholder="Введите ваше имя"></label>
+				<label>фамилия*<input type="text" placeholder="Укажите фамилию"></label>
+				<label>отечество:<input type="text" placeholder="Ну и отечество тоже"></label>
+			</fieldset>
+
+			<fieldset class="range-app">
+				<legend>С каким приложением путешествовали?*</legend>
+				<input type="radio" name="app" value="pink-ios" id="pink-ios" checked><label for="pink-ios">Pink для iOS</label>
+				<input type="radio" name="app" value="pink-android" id="pink-android"><label for="pink-android">Pink на Android</label>
+				<input type="radio" name="app" value="pink-win-phone" id="pink-winphone"><label for="pink-winphone">Windows Phone</label>
+			</fieldset>
+
+			<fieldset class="travel-time">
+				<legend>Когда вы путешествовали?*</legend>
+				<input type="text" id="date-exit" placeholder="1 апреля 2015"><label for="date-exit">Дата выезда</label>
+				<input type="text" id="length-travel" placeholder="10 дней"><label for="length-travel">Продолжительность</label>
+				<input type="text" id="date-return" placeholder="1 апреля 2015"><label for="date-return">Дата возвращения</label>
+			</fieldset>
+
+			<!-- begin your-viators  -->
+			<fieldset class="your-viators">
+				<div class="qty-viators-wrap">
+					<label for="qty-viators">Количество попутчиков*</label>
+					<button class="qty-btn-left"></button><input type="text" id="qty-viators"><button class="qty-btn-right"></button>
+				</div>
+
+				<div class="viators-info">
+					<div class="viators-name-wrap">
+						<i>№</i><div class="viators-num">1</div><label for="viators-name">имя*</label><input type="text" id="viators-name" class="viators-name" placeholder="Введите ваше имя">
+					</div>
+
+					<label for="alias-viators">Прозвище</label>
+					<input type="text" id="alias-viators" class="alias-viators" placeholder="Ну как же без этого!">
+				</div>
+
+				<div class="viators-info">
+					<div class="viators-name-wrap">
+						<i>№</i><div class="viators-num">2</div><label for="viators-name">имя*</label><input type="text" id="viators-name" class="viators-name" placeholder="Введите ваше имя">
+					</div>
+
+					<label for="alias-viators">Прозвище</label>
+					<input type="text" id="alias-viators" class="alias-viators" placeholder="Ну как же без этого!">
+				</div>
+			</fieldset>
+			<!-- end your-viator -->
+
+			<!-- begin progress-travel  -->
+			<fieldset class="progress-travel">
+				<legend>Ваши безбашенные достижения в путешествии</legend>
+				<input type="checkbox" id="selfi-shark" name="selfi-shark"><label for="selfi-shark">Сделал селфи с акулой</label>
+				<input type="checkbox" id="beach-tan" name="beach-tan"><label for="beach-tan">Обгорел на пляже</label>
+				<input type="checkbox" name="celebrity" id="celebrity"><label for="celebrity">Видел Чака Норриса</label>
+				<input type="checkbox" name="souvenir" id="souvenir"><label for="souvenir">Накупил сувениров</label>
+				<input type="checkbox" name="tower" id="tower"><label for="tower">Удержал башню</label>
+				<input type="checkbox" name="defeat" id="defeat"><label for="defeat">Разгромил отель</label>
+			</fieldset>
+			<!-- end progress-travel -->
+
+			<!-- begin travel-foto  -->
+			<fieldset class="travel-foto">
+				<div class="foto-btn-wrap"><button class="foto-btn">Загрузить фото</button></div>
+
+				<div class="photos-upload">
+					<img src="/" alt="фото" width="20" height="20">
+					<img src="/" alt="фото" width="20" height="20">
+					<img src="/" alt="фото" width="20" height="20">
+					<img src="/" alt="фото" width="20" height="20">
+					<img src="/" alt="фото" width="20" height="20">
+					<img src="/" alt="фото" width="20" height="20">
+					<img src="/" alt="фото" width="20" height="20">
+					<img src="/" alt="фото" width="20" height="20">
+				</div>		
+			</fieldset>
+			<!-- end travel-foto -->
+
+			<input type="submit" value="отправить форму" class="sending-form-btn">
+			<p class="note-text"><i>*</i>-обязательные поля</p>
+		</form>
+		<!-- end pink-form -->
+		<!-- begin footer-main  -->
+		<footer class="footer-main">
+			<div class="logo-footer"><a href="/">PINK</a></div>
+			<div class="social-btn">
+				<a href="/" class="ico-tw">tw</a>
+				<a href="/" class="ico-fb">fb</a>
+				<a href="/" class="ico-yt">yt</a>
+			</div>
+			<div class="link-design">Разработано <a href="/"><img src="/" alt="htmlacademy" width="20" height="20"></a></div>
+		</footer>
+		<!-- end footer-main -->
+  </body>
+</html>
