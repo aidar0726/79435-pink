@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Форма</title>
+  <base href="https://up-htmlacademy.github.io/79435-pink/3/">
+</head>
+<body>
+  <!-- begin header-main  -->
+  <header class="header-main">
+    <section class="header-main__top-line">
+      <div class="logo">
+        <a href="/">PINK</a>
+      </div>
+
+      <a href="/" class="header-main__menu-btn"></a>
+      <ul class="main-menu">
+        <li>
+          <button class="main-menu__exit"></button>
+        </li>
+        <li>
+          <a href="/">информация</a>
+        </li>
+        <li>
+          <a href="/">блог</a>
+        </li>
+        <li>
+          <a href="/">отзывы</a>
+        </li>
+        <li>
+          <a href="/">конкурс</a>
+        </li>
+      </ul>
+    </section>
+    <h1 class="header-main__title">Взгляните на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <!-- end header-main -->
+  <!-- begin pink-form  -->
+  <form class="pink-form" action="/" method="post">
+    <p class="pink-form__text">
+      Поделитесь своей историей и
+      получите шанс выиграть ценный
+      приз — 1000 миль на вашу бонусную карту!
+      Пожалуйста, заполните
+    </p>
+
+    <fieldset class="pink-form__block">
+      <label class="form-sign">
+        имя*
+        <input type="text" placeholder="Введите ваше имя"></label>
+
+      <label class="form-sign">
+        фамилия*
+        <input type="text" placeholder="Укажите фамилию"></label>
+
+      <label class="form-sign">
+        отечество:
+        <input type="text" placeholder="Ну и отечество тоже"></label>
+    </fieldset>
+
+    <fieldset class="pink-form__block">
+      <legend class="form-sign">С каким приложением путешествовали?*</legend>
+
+      <input type="radio" name="app" value="pink-ios" id="pink-ios" checked>
+      <label for="pink-ios">Pink для iOS</label>
+
+      <input type="radio" name="app" value="pink-android" id="pink-android">
+      <label for="pink-android">Pink на Android</label>
+
+      <input type="radio" name="app" value="pink-win-phone" id="pink-winphone">
+      <label for="pink-winphone">Windows Phone</label>
+    </fieldset>
+
+    <fieldset class="pink-form__block">
+      <legend class="form-sign">Когда вы путешествовали?*</legend>
+      <input type="text" id="date-exit" placeholder="1 апреля 2015">
+      <label for="date-exit" class="form-sign">Дата выезда</label>
+
+      <input type="text" id="length-travel" placeholder="10 дней">
+      <label for="length-travel" class="form-sign">Продолжительность</label>
+
+      <input type="text" id="date-return" placeholder="1 апреля 2015">
+      <label for="date-return" class="form-sign">Дата возвращения</label>
+    </fieldset>
+
+    <fieldset class="pink-form__block">
+      <div class="qty-viators">
+        <label for="qty-viators" class="form-sign">Количество попутчиков*</label>
+        <button class="qty-viators__left"></button>
+        <input type="text" id="qty-viator">
+        <button class="qty-viators__right"></button>
+      </div>
+
+      <div class="viators-info">
+        <div class="viators-info__wrap"> <i>№</i>
+          <div class="viators-info__num">1</div>
+          <label for="viators-name" class="form-sign">имя*</label>
+          <input type="text" id="viators-name" class="viators-info__name" placeholder="Введите ваше имя"></div>
+
+        <label for="alias-viators" class="form-sign">Прозвище</label>
+        <input type="text" id="alias-viators" class="viators-info__alias" placeholder="Ну как же без этого!"></div>
+
+      <div class="viators-info">
+        <div class="viators-info__wrap"> <i>№</i>
+          <div class="viators-info__num">2</div>
+          <label for="viators-name" class="form-sign">имя*</label>
+          <input type="text" id="viators-name" class="viators-info__name" placeholder="Введите ваше имя"></div>
+
+        <label for="alias-viators" class="form-sign">Прозвище</label>
+        <input type="text" id="alias-viators" class="viators-info__alias" placeholder="Ну как же без этого!"></div>
+    </fieldset>
+
+    <fieldset class="pink-form__block">
+      <legend>Ваши безбашенные достижения в путешествии</legend>
+
+      <input type="checkbox" id="selfi-shark" name="selfi-shark">
+      <label for="selfi-shark" class="check-app">Сделал селфи с акулой</label>
+
+      <input type="checkbox" id="beach-tan" name="beach-tan">
+      <label for="beach-tan" class="check-app">Обгорел на пляже</label>
+
+      <input type="checkbox" name="celebrity" id="celebrity">
+      <label for="celebrity" class="check-app">Видел Чака Норриса</label>
+
+      <input type="checkbox" name="souvenir" id="souvenir">
+      <label for="souvenir" class="check-app">Накупил сувениров</label>
+
+      <input type="checkbox" name="tower" id="tower">
+      <label for="tower" class="check-app">Удержал башню</label>
+
+      <input type="checkbox" name="defeat" id="defeat">
+      <label for="defeat" class="check-app">Разгромил отель</label>
+    </fieldset>
+
+    <fieldset class="pink-form__block">
+      <div class="foto">
+        <button class="foto__btn">Загрузить фото</button>
+      </div>
+
+      <div class="pink-form__upload">
+        <img src="/" alt="фото" width="20" height="20">
+        <img src="/" alt="фото" width="20" height="20">
+        <img src="/" alt="фото" width="20" height="20">
+        <img src="/" alt="фото" width="20" height="20">
+        <img src="/" alt="фото" width="20" height="20">
+        <img src="/" alt="фото" width="20" height="20">
+        <img src="/" alt="фото" width="20" height="20">
+        <img src="/" alt="фото" width="20" height="20"></div>
+    </fieldset>
+
+    <input type="submit" value="отправить форму" class="pink-form__btn">
+    <p class="pink-form__note">
+      <i>*</i>
+      -обязательные поля
+    </p>
+  </form>
+  <!-- end pink-form -->
+  <!-- begin footer-main  -->
+  <footer class="footer-main">
+    <div class="logo">
+      <a href="/">PINK</a>
+    </div>
+
+    <div class="social-btn">
+      <a href="/" class="social-btn__tw">tw</a>
+      <a href="/" class="social-btn__fb">fb</a>
+      <a href="/" class="social-btn__yt">yt</a>
+    </div>
+
+    <div class="link-design">
+      Разработано
+      <a href="/">
+        <img src="/" alt="htmlacademy" width="20" height="20">htmlacademy</a>
+    </div>
+  </footer>
+  <!-- end footer-main -->
+</body>
+</html>
