@@ -7,15 +7,15 @@
 <body>
   <!-- begin header-main  -->
   <header class="header-main">
-    <section class="header-top-line">
+    <section class="header-main__top-line">
       <div class="logo">
         <a href="/">PINK</a>
       </div>
 
-      <a href="/" class="menu-btn"></a>
+      <a href="/" class="header-main__menu-btn"></a>
       <ul class="main-menu">
         <li>
-          <button class="main-menu-exit"></button>
+          <button class="main-menu__exit"></button>
         </li>
         <li>
           <a href="/">информация</a>
@@ -31,34 +31,34 @@
         </li>
       </ul>
     </section>
-    <h1>Взгляните на самое безбашенное путешествие с Пинк</h1>
+    <h1 class="header-main__title">Взгляните на самое безбашенное путешествие с Пинк</h1>
   </header>
   <!-- end header-main -->
   <!-- begin pink-form  -->
   <form class="pink-form" action="/" method="post">
-    <p>
+    <p class="pink-form__text">
       Поделитесь своей историей и
-        получите шанс выиграть ценный
-        приз — 1000 миль на вашу бонусную карту!
-        Пожалуйста, заполните
+      получите шанс выиграть ценный
+      приз — 1000 миль на вашу бонусную карту!
+      Пожалуйста, заполните
     </p>
 
-    <fieldset class="pink-form-block">
-      <label>
+    <fieldset class="pink-form__block">
+      <label class="form-sign">
         имя*
         <input type="text" placeholder="Введите ваше имя"></label>
 
-      <label>
+      <label class="form-sign">
         фамилия*
         <input type="text" placeholder="Укажите фамилию"></label>
 
-      <label>
+      <label class="form-sign">
         отечество:
         <input type="text" placeholder="Ну и отечество тоже"></label>
     </fieldset>
 
-    <fieldset class="pink-form-block">
-      <legend>С каким приложением путешествовали?*</legend>
+    <fieldset class="pink-form__block">
+      <legend class="form-sign">С каким приложением путешествовали?*</legend>
 
       <input type="radio" name="app" value="pink-ios" id="pink-ios" checked>
       <label for="pink-ios">Pink для iOS</label>
@@ -70,73 +70,73 @@
       <label for="pink-winphone">Windows Phone</label>
     </fieldset>
 
-    <fieldset class="pink-form-block">
-      <legend>Когда вы путешествовали?*</legend>
+    <fieldset class="pink-form__block">
+      <legend class="form-sign">Когда вы путешествовали?*</legend>
       <input type="text" id="date-exit" placeholder="1 апреля 2015">
-      <label for="date-exit">Дата выезда</label>
+      <label for="date-exit" class="form-sign">Дата выезда</label>
 
       <input type="text" id="length-travel" placeholder="10 дней">
-      <label for="length-travel">Продолжительность</label>
+      <label for="length-travel" class="form-sign">Продолжительность</label>
 
       <input type="text" id="date-return" placeholder="1 апреля 2015">
-      <label for="date-return">Дата возвращения</label>
+      <label for="date-return" class="form-sign">Дата возвращения</label>
     </fieldset>
 
-    <fieldset class="pink-form-block">
-      <div class="qty-viators-wrap">
-        <label for="qty-viators">Количество попутчиков*</label>
-        <button class="qty-btn-left"></button>
-        <input type="text" id="qty-viators">
-        <button class="qty-btn-right"></button>
+    <fieldset class="pink-form__block">
+      <div class="qty-viators">
+        <label for="qty-viators" class="form-sign">Количество попутчиков*</label>
+        <button class="qty-viators__left"></button>
+        <input type="text" id="qty-viator">
+        <button class="qty-viators__right"></button>
       </div>
 
       <div class="viators-info">
-        <div class="viators-name-wrap"> <i>№</i>
-          <div class="viators-num">1</div>
-          <label for="viators-name">имя*</label>
-          <input type="text" id="viators-name" class="viators-name" placeholder="Введите ваше имя"></div>
+        <div class="viators-info__wrap"> <i>№</i>
+          <div class="viators-info__num">1</div>
+          <label for="viators-name" class="form-sign">имя*</label>
+          <input type="text" id="viators-name" class="viators-info__name" placeholder="Введите ваше имя"></div>
 
-        <label for="alias-viators">Прозвище</label>
-        <input type="text" id="alias-viators" class="alias-viators" placeholder="Ну как же без этого!"></div>
+        <label for="alias-viators" class="form-sign">Прозвище</label>
+        <input type="text" id="alias-viators" class="viators-info__alias" placeholder="Ну как же без этого!"></div>
 
       <div class="viators-info">
-        <div class="viators-name-wrap"> <i>№</i>
-          <div class="viators-num">2</div>
-          <label for="viators-name">имя*</label>
-          <input type="text" id="viators-name" class="viators-name" placeholder="Введите ваше имя"></div>
+        <div class="viators-info__wrap"> <i>№</i>
+          <div class="viators-info__num">2</div>
+          <label for="viators-name" class="form-sign">имя*</label>
+          <input type="text" id="viators-name" class="viators-info__name" placeholder="Введите ваше имя"></div>
 
-        <label for="alias-viators">Прозвище</label>
-        <input type="text" id="alias-viators" class="alias-viators" placeholder="Ну как же без этого!"></div>
+        <label for="alias-viators" class="form-sign">Прозвище</label>
+        <input type="text" id="alias-viators" class="viators-info__alias" placeholder="Ну как же без этого!"></div>
     </fieldset>
 
-    <fieldset class="pink-form-block">
+    <fieldset class="pink-form__block">
       <legend>Ваши безбашенные достижения в путешествии</legend>
 
       <input type="checkbox" id="selfi-shark" name="selfi-shark">
-      <label for="selfi-shark">Сделал селфи с акулой</label>
+      <label for="selfi-shark" class="check-app">Сделал селфи с акулой</label>
 
       <input type="checkbox" id="beach-tan" name="beach-tan">
-      <label for="beach-tan">Обгорел на пляже</label>
+      <label for="beach-tan" class="check-app">Обгорел на пляже</label>
 
       <input type="checkbox" name="celebrity" id="celebrity">
-      <label for="celebrity">Видел Чака Норриса</label>
+      <label for="celebrity" class="check-app">Видел Чака Норриса</label>
 
       <input type="checkbox" name="souvenir" id="souvenir">
-      <label for="souvenir">Накупил сувениров</label>
+      <label for="souvenir" class="check-app">Накупил сувениров</label>
 
       <input type="checkbox" name="tower" id="tower">
-      <label for="tower">Удержал башню</label>
+      <label for="tower" class="check-app">Удержал башню</label>
 
       <input type="checkbox" name="defeat" id="defeat">
-      <label for="defeat">Разгромил отель</label>
+      <label for="defeat" class="check-app">Разгромил отель</label>
     </fieldset>
 
-    <fieldset class="pink-form-block">
-      <div class="foto-btn-wrap">
-        <button class="foto-btn">Загрузить фото</button>
+    <fieldset class="pink-form__block">
+      <div class="foto">
+        <button class="foto__btn">Загрузить фото</button>
       </div>
 
-      <div class="photos-upload">
+      <div class="pink-form__upload">
         <img src="/" alt="фото" width="20" height="20">
         <img src="/" alt="фото" width="20" height="20">
         <img src="/" alt="фото" width="20" height="20">
@@ -147,8 +147,8 @@
         <img src="/" alt="фото" width="20" height="20"></div>
     </fieldset>
 
-    <input type="submit" value="отправить форму" class="sending-form-btn">
-    <p class="note-text">
+    <input type="submit" value="отправить форму" class="pink-form__btn">
+    <p class="pink-form__note">
       <i>*</i>
       -обязательные поля
     </p>
@@ -156,14 +156,14 @@
   <!-- end pink-form -->
   <!-- begin footer-main  -->
   <footer class="footer-main">
-    <div class="logo-footer">
+    <div class="logo">
       <a href="/">PINK</a>
     </div>
 
     <div class="social-btn">
-      <a href="/" class="ico-tw">tw</a>
-      <a href="/" class="ico-fb">fb</a>
-      <a href="/" class="ico-yt">yt</a>
+      <a href="/" class="social-btn__tw">tw</a>
+      <a href="/" class="social-btn__fb">fb</a>
+      <a href="/" class="social-btn__yt">yt</a>
     </div>
 
     <div class="link-design">
