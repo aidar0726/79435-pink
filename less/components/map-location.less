@@ -1,0 +1,14 @@
+.map-location {
+  width: 320px;
+  height: 200px;
+  background: url(../img/bg-map.jpg) no-repeat bottom;
+  positon: relative;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    border: 170px solid transparent;
+    border-top: 40px solid @white;
+  }
+}
