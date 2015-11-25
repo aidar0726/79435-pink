@@ -1,0 +1,449 @@
+.index-wrap {
+  width: 320px;
+  box-sizing: border-box;
+}
+.header-main {
+  height: 456px;
+  text-align: center;
+  position: relative;
+  background: url(../img/bg-header-main.jpg) no-repeat center;
+}
+.header-main__top-line {
+  background: rgba(27, 37, 47, 0.3);
+  padding: 20px 20px;
+  margin-bottom: 15px;
+}
+.header-main__title {
+  font: 24px/24px 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  color: #a8adb2;
+}
+.header-main__btn {
+  float: right;
+  display: block;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.header-main__img {
+  vertical-align: bottom;
+}
+/* белый цвет */
+/* черный цвет */
+/*фон верхней линии хедера*/
+/* цвет фона блока "download" */
+/*цвет абзацев блока features */
+/*цвет текста заголовка блока  features*/
+/*цвет текста заголовка хедера*/
+/*фон переключателя слайдера*/
+/*цвет для текста цены в слайдере блока variant*/
+/*цвет текста блока contact*/
+/*серый фоновый цвет градиента с косой  линией*/
+/*фоновый цвет главного меню */
+/*цвет нижнего бордера главного меню */
+/*цвет верхнего бордера главного меню */
+/*цвет текста для блока download*/
+/*  цвет фона шапки слайдера в блоке variant */
+/* цвет поперечных и продольных линий блока слайдера в блоке variant */
+/* жирный шрифт*/
+/* тонкий шрифт*/
+/* нормальный шрифт*/
+/*@font_1*/
+/* размер шрифта/line-height для features__text и для downlod__text*/
+/*@font_2*/
+/* размер шрифта/line-height для самых крупных заголовков*/
+/*@font_3*/
+/* размер шрифта/line-height для features__head-title,header-main__title*/
+/*@font_4*/
+/* размер шрифта/line-height для заголовков блока reviews */
+/*@font_5*/
+/* размер шрифта/line-height для текста блок contact */
+/*@font_6*/
+/* размер шрифта/line-height для текста слайдера в блоке variant*/
+/*@font_7*/
+/* размер шрифта/line-height для ссылок главного меню*/
+/*@font_8*/
+/* размер шрифта/line-height для кнопки "скачать приложение" блока download*/
+.logo {
+  float: left;
+}
+.logo--left {
+  margin-left: 20px;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.download {
+  background: #1d2631;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.download__btn {
+  display: block;
+  width: 280px;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  padding: 10px 0;
+  font: 18px/18px 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.download__system {
+  font-size: 0;
+  margin-bottom: 15px;
+  vertical-align: center;
+}
+.download__text {
+  font: 14px/24px 'Open Sans', 'Arial', sans-serif;
+  color: #787c81;
+}
+.download img {
+  font-size: 10px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 40px;
+}
+.download img:last-child {
+  margin-right: 0;
+}
+.features {
+  text-align: center;
+  padding-top: 20px;
+}
+.features__head {
+  padding-bottom: 90px;
+  background-image: linear-gradient(176deg, #fff 80%, #f2f2f2 10%);
+}
+.features__head-title {
+  font: 24px/24px 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  color: #90969d;
+  margin-bottom: 20px;
+}
+.features__head-title:last-child {
+  margin-bottom: 0;
+}
+.features__title {
+  font: 18px/24px 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.features__text {
+  font: 14px/24px 'Open Sans', 'Arial', sans-serif;
+  color: #a2a5aa;
+}
+.features__description {
+  background: #f2f2f2 url(../img/bg-bottom-features.png) no-repeat center bottom;
+  padding-bottom: 320px;
+  padding-top: 20px;
+}
+.features__description li {
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.features__description li:last-child {
+  margin-bottom: 0;
+}
+.reviews {
+  padding: 45px 20px 10px 20px;
+  text-align: center;
+}
+.reviews__name {
+  font: 18px/30px 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.reviews__text {
+  font: 14px/30px 'Open Sans', 'Arial', sans-serif;
+  color: #a2a5aa;
+}
+.slider-switch {
+  max-width: 100px;
+  font-size: 0;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 35px;
+}
+.slider-switch__li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  background: #bec2c7;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.slider-switch__li:last-child {
+  margin-right: 0;
+}
+.slider-switch__li--active {
+  background: #fff;
+  border: 3px solid black;
+}
+.variant {
+  background-image: linear-gradient(176deg, #fff 10%, #f2f2f2 10%);
+  padding-top: 110px;
+  padding-bottom: 45px;
+}
+.variant__slides {
+  position: relative;
+  background: #fff;
+}
+.variant__slides:after {
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #a6abb0;
+  top: 0;
+  left: 20px;
+}
+.variant__slides:before {
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #a6abb0;
+  top: 0;
+  right: 20px;
+}
+.variant__img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 20px;
+}
+.variant__head {
+  background: #283645;
+  text-align: center;
+  padding: 20px 0;
+}
+.variant__title {
+  font: 18px/30px 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.variant__price {
+  font: 24px/30px 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  color: #8b9198;
+}
+.variant__option li {
+  border-bottom: 2px solid #a6abb0;
+  padding: 20px 0;
+}
+.variant__text {
+  font: 14px/30px 'Open Sans', 'Arial', sans-serif;
+  margin-left: 44px;
+  float: left;
+  text-transform: uppercase;
+  color: #a2a5aa;
+}
+.variant__ico {
+  display: block;
+  float: right;
+  margin-right: 40px;
+}
+.contact {
+  padding-top: 45px;
+  text-align: center;
+}
+.contact__head {
+  margin-bottom: 40px;
+}
+.contact__head-title {
+  font: 14px/24px 'Open Sans', 'Arial', sans-serif;
+  color: #90969d;
+  font-weight: 300;
+  text-transform: none;
+}
+.contact__title {
+  font: 18px/24px 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+}
+.contact__text {
+  font: 24px/30px 'Open Sans', 'Arial', sans-serif;
+  color: #eca9ba;
+  font-weight: 300;
+}
+.contact__text--link {
+  text-decoration: none;
+}
+.contact__types li {
+  margin-bottom: 20px;
+}
+.map-location {
+  width: 320px;
+  height: 200px;
+  background: url(../img/bg-map.jpg) no-repeat bottom;
+  positon: relative;
+}
+.map-location:after {
+  position: absolute;
+  display: block;
+  content: " ";
+  border: 170px solid transparent;
+  border-top: 40px solid #fff;
+}
+.main-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 0;
+  text-transform: lowercase;
+}
+.main-menu li {
+  display: inline-block;
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 0;
+  background: #283645;
+  border-bottom: 1px solid #17131b;
+  border-top: 1px solid #545c67;
+}
+.main-menu li:first-child {
+  padding: 15px 0;
+}
+.main-menu__link {
+  display: block;
+  font: 18px/32px 'Open Sans', 'Arial', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.main-menu__btn {
+  float: right;
+  display: block;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.main-menu__btn--right {
+  margin-right: 15px;
+}
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
