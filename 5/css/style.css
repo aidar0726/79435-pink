@@ -1,7 +1,6 @@
 .index-wrap {
   width: 320px;
   box-sizing: border-box;
-  margin: 0 auto;
 }
 .header-main {
   height: 456px;
@@ -31,6 +30,42 @@
 .header-main__img {
   vertical-align: bottom;
 }
+/* белый цвет */
+/* черный цвет */
+/*фон верхней линии хедера*/
+/* цвет фона блока "download" */
+/*цвет абзацев блока features */
+/*цвет текста заголовка блока  features*/
+/*цвет текста заголовка хедера*/
+/*фон переключателя слайдера*/
+/*цвет для текста цены в слайдере блока variant*/
+/*цвет текста блока contact*/
+/*серый фоновый цвет градиента с косой  линией*/
+/*фоновый цвет главного меню */
+/*цвет нижнего бордера главного меню */
+/*цвет верхнего бордера главного меню */
+/*цвет текста для блока download*/
+/*  цвет фона шапки слайдера в блоке variant */
+/* цвет поперечных и продольных линий блока слайдера в блоке variant */
+/* жирный шрифт*/
+/* тонкий шрифт*/
+/* нормальный шрифт*/
+/*@font_1*/
+/* размер шрифта/line-height для features__text и для downlod__text*/
+/*@font_2*/
+/* размер шрифта/line-height для самых крупных заголовков*/
+/*@font_3*/
+/* размер шрифта/line-height для features__head-title,header-main__title*/
+/*@font_4*/
+/* размер шрифта/line-height для заголовков блока reviews */
+/*@font_5*/
+/* размер шрифта/line-height для текста блок contact */
+/*@font_6*/
+/* размер шрифта/line-height для текста слайдера в блоке variant*/
+/*@font_7*/
+/* размер шрифта/line-height для ссылок главного меню*/
+/*@font_8*/
+/* размер шрифта/line-height для кнопки "скачать приложение" блока download*/
 .logo {
   float: left;
 }
@@ -55,7 +90,7 @@
   border-radius: 25px;
   padding: 10px 0;
   font: 18px/18px 'Open Sans', 'Arial', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
   text-decoration: none;
   margin-bottom: 20px;
@@ -136,20 +171,20 @@
   text-align: center;
   margin-top: 35px;
 }
-.slider-switch li {
+.slider-switch__li {
   display: inline-block;
+  vertical-align: middle;
   width: 6px;
   height: 6px;
   background: #bec2c7;
-  border: 3px solid #fff;
   border-radius: 10px;
   margin-right: 10px;
   cursor: pointer;
 }
-.slider-switch li:last-child {
+.slider-switch__li:last-child {
   margin-right: 0;
 }
-.slider-switch .slider-switch--active {
+.slider-switch__li--active {
   background: #fff;
   border: 3px solid black;
 }
@@ -161,17 +196,6 @@
 .variant__slides {
   position: relative;
   background: #fff;
-}
-.variant__img {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 20px;
-}
-.variant__head {
-  background: #283645;
-  text-align: center;
-  padding: 20px 0;
 }
 .variant__slides:after {
   content: " ";
@@ -190,6 +214,17 @@
   background: #a6abb0;
   top: 0;
   right: 20px;
+}
+.variant__img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 20px;
+}
+.variant__head {
+  background: #283645;
+  text-align: center;
+  padding: 20px 0;
 }
 .variant__title {
   font: 18px/30px 'Open Sans', 'Arial', sans-serif;
@@ -226,7 +261,7 @@
   margin-bottom: 40px;
 }
 .contact__head-title {
-  font: 24px 'Open Sans', 'Arial', sans-serif;
+  font: 14px/24px 'Open Sans', 'Arial', sans-serif;
   color: #90969d;
   font-weight: 300;
   text-transform: none;
