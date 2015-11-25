@@ -4,43 +4,43 @@
 
   &__head {
     padding-bottom: 90px;
-    background-image: linear-gradient(176deg, @white 80%, @color-3 10%);
+    background-image: linear-gradient(176deg, @white 80%, @color_gradient 10%);
   }
 
   &__head-title {
-    font: @font_3 @font;
+    font: @font_24-24;
     font-weight: @light;
-    color: @head-title;
+    color: @head_title;
     margin-bottom: 20px;
-  }
 
-  &__head-title:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
-    font: @font_2 @font;
+    font: @font_18-24;
     font-weight: @bold;
     margin-bottom: 15px;
   }
 
   &__text {
-    font: @font_1 @font;
-    color: @features-text;
+    font: @font_14-24;
+    color: @features_text;
   }
 
   &__description {
-    background:@color-3 url(../img/bg-bottom-features.png) no-repeat center bottom;
+    background: @color_gradient url(../img/bg-bottom-features.png) no-repeat center bottom;
     padding-bottom: 320px;
     padding-top: 20px;
 
     li {
       margin-bottom: 20px;
       padding:0 15px;
-    }
 
-    li:last-child {
-      margin-bottom: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
   }

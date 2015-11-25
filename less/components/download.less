@@ -1,5 +1,5 @@
 .download {
-  background: @bg-download;
+  background: @bg_download;
   color: @white;
   text-align: center;
   padding: 20px;
@@ -7,11 +7,11 @@
   &__btn {
     display: block;
     width: 280px;
-    border: @border-btn;
+    border: 3px solid @white;
     border-radius: 25px;
     padding: 10px 0;
-    font: 18px/18px @font;
-    font-weight: bold;
+    font: @font_18-18;
+    font-weight: @bold;
     color: @white;
     text-decoration: none;
     margin-bottom: 20px;
@@ -24,18 +24,19 @@
   }
 
   &__text {
-    font: @font_1 @font;
-    color: @color-7;
+    font: @font_14-24;
+    color: @color_download_text;
   }
 
-  & img {
+  img {
     font-size: 10px;
     display: inline-block;
     vertical-align: bottom;
     margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
-  & img:last-child {
-    margin-right: 0;
-  }
 }

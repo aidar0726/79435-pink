@@ -5,24 +5,24 @@
   text-align: center;
   margin-top: 35px;
 
-& li{
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: @switch;
-  border: 3px solid @white;
-  border-radius: 10px;
-  margin-right: 10px;
-  cursor: pointer;
-}
+  &__li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    background: @bg_slider_switch;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
 
-& li:last-child {
-  margin-right: 0;
-}
+    &:last-child {
+      margin-right: 0;
+    }
 
-& &--active {
-  background: @white;
-  border: 3px solid black;
-}
+    &--active {
+      background: @white;
+      border: 3px solid @black;
+    }
+  }
 
 }

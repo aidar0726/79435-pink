@@ -6,23 +6,24 @@
   font-size: 0;
   text-transform: lowercase;
 
-  & li {
+  li {
     display: inline-block;
     width: 100%;
     max-width: 320px;
     padding: 10px 0;
-    background: @color-4;
-    border-bottom: 1px solid @color-5;
-    border-top: 1px solid @color-6;
-  }
+    background: @bg_color_main-menu;
+    border-bottom: 1px solid @color_border_bottom;
+    border-top: 1px solid @color_border_top;
 
-  & li:first-child {
-    padding: 15px 0;
+    &:first-child {
+      padding: 15px 0;
+    }
+
   }
 
   &__link {
     display: block;
-    font: @font_7 @font;
+    font: @font_18-32;
     font-weight: bold;
     color: @white;
     text-decoration: none;
@@ -36,10 +37,10 @@
     border: none;
     cursor: pointer;
     color: @white;
-  }
 
-  &__btn--right {
-    margin-right: 15px;
+    &--right {
+      margin-right: 15px;
+    }
   }
 
 }

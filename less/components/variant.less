@@ -1,11 +1,32 @@
 .variant {
-  background-image: linear-gradient(176deg, @white 10%, @color-3 10%);
+  background-image: linear-gradient(176deg, @white 10%, @color_gradient 10%);
   padding-top: 110px;
   padding-bottom: 45px;
 
   &__slides {
     position: relative;
     background: @white;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background: @line_variant_slides;
+      top: 0;
+      left: 20px;
+    }
+
+    &:before {
+      content: " ";
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background: @line_variant_slides;
+      top: 0;
+      right: 20px;
+    }
+
   }
 
   &__img {
@@ -16,57 +37,38 @@
   }
 
   &__head {
-    background: @bg-variant-head;
+    background: @bg_variant_head;
     text-align: center;
     padding: 20px 0;
   }
 
-  &__slides:after {
-    content: " ";
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    background: @line;
-    top: 0;
-    left: 20px;
-  }
-
-  &__slides:before {
-    content: " ";
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    background: @line;
-    top: 0;
-    right: 20px;
-  }
 
   &__title {
-    font: @font_4 @font;
+    font: @font_18-30;
     font-weight: @bold;
     color: @white;
     text-transform: uppercase;
   }
 
   &__price {
-    font: @font_5 @font;
+    font: @font_24-30;
     font-weight: @light;
-    color: @price;
+    color: @color_price;
   }
 
   &__option {
     li {
-      border-bottom: 2px solid @line;
+      border-bottom: 2px solid @line_variant_slides;
       padding: 20px 0;
     }
   }
 
   &__text {
-    font: @font_6 @font;
+    font: @font_14-30;
     margin-left: 44px;
     float: left;
     text-transform: uppercase;
-    color: @features-text;
+    color: @features_text;
   }
 
   &__ico {
