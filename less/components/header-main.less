@@ -2,7 +2,8 @@
   height: 456px;
   text-align: center;
   position: relative;
-  background: url(../img/bg-header-main.jpg) no-repeat center;
+  background: url(../img/bg2-header-main.png) no-repeat center bottom,
+              url(../img/bg1-header-main.jpg) no-repeat center;
 
   &__top-line {
     background: @top_line;
@@ -12,8 +13,10 @@
 
   &__title {
     font: @font_24-24;
-    font-weight: 300;
+    font-weight: @light;
     color: @color_header_title;
+    padding: 0 15px;
+    padding-bottom: 30px;
   }
 
   &__btn {
@@ -28,5 +31,10 @@
 
   &__img {
     vertical-align: bottom;
+  }
+
+  &--for-form {
+    background: url(../img/bg1-header-main.jpg) no-repeat center;
+    height: auto;
   }
 }
