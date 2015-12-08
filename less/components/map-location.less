@@ -8,7 +8,21 @@
     position: absolute;
     display: block;
     content: " ";
-    border: 170px solid transparent;
+    border: 160px solid transparent;
     border-top: 40px solid @white;
+  }
+}
+
+@media (min-width: @screen_md) {
+  .map-location {
+    width: 100%;
+    height: 379px;
+    background: url(../img/bg-map-tablet.jpg) no-repeat bottom;
+
+     &:after {
+      border: 350px solid transparent;
+      border-top: 75px solid @white;
+    }
+
   }
 }

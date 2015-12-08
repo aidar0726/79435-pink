@@ -7,6 +7,10 @@
     background-image: linear-gradient(176deg, @white 80%, @color_gradient 10%);
   }
 
+  &__content-wrap {
+    margin-bottom: 40px;
+  }
+
   &__head-title {
     font: @font_24-24;
     font-weight: @light;
@@ -29,9 +33,16 @@
     color: @features_text;
   }
 
+  &__description-bg {
+    background: url(../img/screen-mobile-3.png) no-repeat center bottom;
+    outline: 1px solid blue;
+    margin: 0 auto;
+    height: 280px;
+    width: 160px;
+  }
+
   &__description {
-    background: @color_gradient url(../img/bg-bottom-features.png) no-repeat center bottom;
-    padding-bottom: 320px;
+    background: @color_gradient;
     padding-top: 20px;
 
     li {
@@ -43,6 +54,48 @@
       }
     }
 
+  }
+
+}
+
+@media (min-width: @screen_md) {
+  .features {
+
+    &__head {
+      padding-bottom: 110px;
+    }
+
+    &__content-wrap {
+      width: 320px;
+      float: right;
+      text-align: left;
+    }
+
+    &__description-bg {
+      background: url(../img/iphone-screen-tablet-3@1x.png) no-repeat center bottom;
+      outline: 1px solid blue;
+      margin-left: 35px;
+      float: left;
+      margin-top: -70px;
+      height: 482px;
+      width: 265px;
+    }
+
+    &__content-wrap {
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+
+    &__head-title {
+      font:@font_40-40;
+      margin-bottom: 0;
+      font-weight: @light;
+
+      &:last-child {
+        margin-bottom: 0;
+        padding: 0 65px;
+      }
+    }
   }
 
 }

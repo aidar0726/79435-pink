@@ -1,5 +1,9 @@
 .form {
 
+  &__link-delete {
+    display: none;
+  }
+
   &__block {
     padding: 40px 20px;
 
@@ -169,7 +173,7 @@
   }
 
   &__count {
-    width: 280px;
+    width: 100%;
     font: @font_18-30;
     color: @color_form_text;
     border: 2px solid @color_border_input;
@@ -341,5 +345,123 @@
 
   }
 
-
 }
+
+@media (min-width: @screen_md) {
+  .form {
+    padding: 0 40px;
+
+    &__block {
+      padding: 0 60px 40px 60px;
+      margin-bottom: 40px;
+      position: relative;
+      border: 2px solid @color_circle;
+
+      &--first {
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+      }
+
+      &--viators {
+        background: @white;
+      }
+
+      &--radio-btn {
+        background: @white;
+      }
+
+      &--bg-gray {
+        background: @white;
+      }
+    }
+
+    &__legend {
+      width: 25%;
+      outline: 1px solid black;
+    }
+
+    &__img-wrap {
+      width: 120px;
+      height: 120px;
+      outline: 1px solid blue;
+    }
+
+    &__sign {
+
+      &--nickname {
+        margin-left: 95px;
+      }
+    }
+
+    &__link-delete {
+      display: block;
+      padding-top: 15px;
+      text-decoration: none;
+      font: @font_14-30;
+      color: @bg_variant_head;
+      float: right;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      padding: 80px 100px 0 100px;
+      font: @font_14-30;
+      text-align: center;
+      color: @color_form_text;
+    }
+
+    &__count-wrap {
+      width: 240px;
+    }
+
+    &__date {
+      width: 240px;
+    }
+
+    &__user-info {
+      width: 100%;
+    }
+
+    &__wrap-tablet {
+      float: right;
+    }
+
+    &__wrap-last {
+      float: left;
+      margin-top: 25px;
+    }
+
+    &__wrap-date {
+      float: left;
+    }
+
+    &__name {
+      width: 300px;
+      margin-left: 20px;
+    }
+
+    &__alias {
+      width: 300px;
+      margin-left: 80px;
+    }
+
+    &__num {
+      border-right: 2px solid @color_circle;
+    }
+
+    &__symbol-num {
+      margin-right: 50px;
+    }
+
+    &__form__sign {
+      margin-right: 95px;
+    }
+
+    &__foto-btn {
+      width: 100%;
+    }
+  }
+}
+
+

@@ -13,7 +13,8 @@
       <section class="header-main__top-line clearfix">
         <div class="logo">
           <a href="/">
-            <img class="logo__img" src="img/logo.png"></a>
+            <img class="logo__img" src="img/logo.png">
+          </a>
         </div>
 
         <button class="header-main__btn">
@@ -43,7 +44,7 @@
           </li>
         </ul>
       </section>
-      <h1 class="header-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="header-main__title-form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <!-- end header-main -->
     <!-- begin form  -->
@@ -52,9 +53,10 @@
         Поделитесь своей историей и
         получите шанс выиграть ценный
         приз — 1000 миль на вашу бонусную карту!
+        Пожалуйста,заполните форму ниже:
       </p>
 
-      <fieldset class="form__block">
+      <fieldset class="form__block form__block--first">
         <label class="form__sign form__sign--label" id="user-name">имя *</label>
         <input type="text" placeholder="Введите ваше имя" id="user-name" class="form__user-info">
 
@@ -62,10 +64,11 @@
         <input type="text" placeholder="Укажите фамилию" id="user-surname" class="form__user-info">
 
         <label class="form__sign form__sign--label" id="user-country">отечество :</label>
-        <input type="text" placeholder="Ну и отечество тоже" id="user-country" class="form__user-info"></fieldset>
+        <input type="text" placeholder="Ну и отечество тоже" id="user-country" class="form__user-info">
+      </fieldset>
 
       <fieldset class="form__block form__block--radio-btn">
-        <div class="form__legend">С каким приложением путешествовали? *</div>
+        <div class="form__legend" align="center">С каким приложением путешествовали? *</div>
         <div class="form__wrap-app">
           <input type="radio" name="app" value="pink-ios" id="pink-ios" class="form__ios form__app-check" checked>
           <label for="pink-ios">Pink для iOS</label>
@@ -82,27 +85,31 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__block form__block--center">
+      <fieldset class="form__block form__block--center clearfix">
         <div class="form__legend">Когда вы путешествовали?*</div>
 
         <div class="form__wrap-date">
           <input type="text" id="date-exit" placeholder="1 апреля 2015" class="form__date">
           <label for="date-exit" class="form__sign">Дата выезда</label>
-          <div>
+        </div>
 
-            <div class="form__count-wrap">
-              <button class="form__button form__button--right"></button>
-              <input type="text" id="length-travel" placeholder="10 дней" class="form__count">
-              <button class="form__button form__button--left"></button>
-            </div>
-            <label for="length-travel" class="form__sign">Продолжительность</label>
+        <div class="form__wrap-tablet">
+          <div class="form__count-wrap">
+            <button class="form__button form__button--right"></button>
+            <input type="text" id="length-travel" placeholder="10 дней" class="form__count">
+            <button class="form__button form__button--left"></button>
+          </div>
+          <label for="length-travel" class="form__sign">Продолжительность</label>
+        </div>
 
-            <input type="text" id="date-return" placeholder="1 апреля 2015" class="form__date form__date--return">
-            <label for="date-return" class="form__sign">Дата возвращения</label>
-          </fieldset>
+        <div class="form__wrap-last">
+          <input type="text" id="date-return" placeholder="1 апреля 2015" class="form__date form__date--return">
+          <label for="date-return" class="form__sign">Дата возвращения</label>
+        </div>
+      </fieldset>
 
           <fieldset class="form__block form__block--viators">
-            <label for="quantity-viators" class="form__sign form__sign--viators-label">Количество попутчиков *</label>
+            <div for="quantity-viators" class="form__sign form__sign--viators-label">Количество попутчиков *</div>
 
             <div class="form__count-wrap form__count-wrap--viators">
               <button class="form__button form__button--right"></button>
@@ -117,7 +124,9 @@
               </label>
               <div class="form__inner">
                 <div class="form__num">1</div>
-                <input type="text" id="viators-name" class="form__name" placeholder="Введите ваше имя"></div>
+                <input type="text" id="viators-name" class="form__name" placeholder="Введите ваше имя">
+                <a href="/" class="form__link-delete">удалить</a>
+              </div>
 
               <label for="alias-viators" class="form__sign form__sign--nickname">Прозвище</label>
               <input type="text" id="alias-viators" class="form__alias" placeholder="Ну как же без этого!"></div>
@@ -130,7 +139,9 @@
 
               <div class="form__inner">
                 <div class="form__num">2</div>
-                <input type="text" id="viators-name" class="form__name" placeholder="Введите ваше имя"></div>
+                <input type="text" id="viators-name" class="form__name" placeholder="Введите ваше имя">
+                <a href="/" class="form__link-delete">удалить</a>
+              </div>
 
               <label for="alias-viators" class="form__sign form__sign--nickname">Прозвище</label>
               <input type="text" id="alias-viators" class="form__alias" placeholder="Ну как же без этого!"></div>

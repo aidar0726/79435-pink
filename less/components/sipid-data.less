@@ -1,0 +1,46 @@
+.sipid-data {
+  display: none;
+}
+
+@media (min-width: @screen_md) {
+  .sipid-data {
+    display: block;
+    padding-top: 55px;
+
+    &__clock {
+      font: @font_104-162;
+      font-weight: @bold;
+      color: @color_form_sign;
+      background: url(../img/bg-clock.png) no-repeat center center;
+      text-align: center;
+      width: 50%;
+      height: 300px;
+      float: left;
+    }
+
+    &__recital {
+      float: right;
+      width: 50%;
+      padding-top: 35px;
+      .box-sizing();
+      padding-right: 50px;
+    }
+
+    &__title {
+      font: @font_30-36;
+      font-weight: @bold;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      font: @font_14-24;
+      color: @bg_color_main-menu;
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      font: @font_14-24;
+      color: @color_form_sign;
+    }
+  }
+}

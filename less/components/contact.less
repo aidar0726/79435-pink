@@ -7,7 +7,7 @@
   }
 
   &__head-title {
-    font: @font_14-24;
+    font: @font_24-24;
     color: @head_title;
     font-weight: @light;
     text-transform: none;
@@ -32,5 +32,38 @@
     li {
       margin-bottom: 20px;
     }
+  }
+}
+
+@media (min-width: @screen_md) {
+  .contact {
+
+    &__wrap-column {
+      margin-bottom: 30px;
+    }
+
+    &__head {
+      margin-bottom: 55px;
+    }
+
+    &__head-title {
+      font:@font_40-40;
+      font-weight: @light;
+
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__left-column {
+      float: left;
+      width: 50%;
+    }
+
+    &__right-column {
+      float: right;
+      width: 50%;
+    }
+
   }
 }

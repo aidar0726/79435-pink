@@ -10,11 +10,12 @@
   <!-- begin index-wrap  -->
   <div class="index-wrap">
     <!-- begin header-main  -->
-    <header class="header-main">
+    <header class="header-main clearfix">
       <section class="header-main__top-line clearfix">
         <div class="logo">
           <a href="/">
-            <img class="logo__img" src="img/logo.png"></a>
+            <img class="logo__img" src="img/logo.png">
+          </a>
         </div>
 
         <button class="header-main__btn">
@@ -47,22 +48,27 @@
       <h1 class="header-main__title">
         Взгляните на жизнь иначе!
       </h1>
+
+      <div class="header-main__bg-hand">
+      <!--второй фон "рука c телефоном"-->
+      </div>
+
+      <!-- begin download  -->
+      <section class="download">
+        <a href="/" class="download__btn">Скачать приложение</a>
+        <div class="download__reach">
+          <div class="download__system">
+            <img src="img/apple-logo.png" alt="apple"  width="46" height="57">
+            <img src="img/android-logo.png" alt="android"  width="42" height="47">
+            <img src="img/microsoft-logo.png" alt="windows"  width="44" height="42"></div>
+          <p class="download__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+      <!-- end download -->
     </header>
     <!-- end header-main -->
-    <!-- begin download  -->
-    <section class="download">
-      <a href="/" class="download__btn">Скачать приложение</a>
-      <div class="download__reach">
-        <div class="download__system">
-          <img src="img/apple-logo.png" alt="apple"  width="46" height="57">
-          <img src="img/android-logo.png" alt="android"  width="42" height="47">
-          <img src="img/microsoft-logo.png" alt="windows"  width="44" height="42"></div>
-        <p class="download__text">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </div>
-    </section>
-    <!-- end download -->
     <!-- begin features  -->
     <section class="features">
       <div class="features__head">
@@ -70,32 +76,52 @@
         <div class="features__head-title">Нам есть что Вам предложить!</div>
       </div>
 
-      <ul class="features__description">
-        <li>
-          <h2 class="features__title">Поднимает настроение</h2>
-          <p class="features__text">
-            Приложение позволит вам победить
-              осеннюю хандру и деперессию
-              буквально в несколько кликов!
-          </p>
-        </li>
-        <li>
-          <h2 class="features__title">Меняет мир вокруг</h2>
-          <p class="features__text">
-            Сделайте снимок и украсьте его смайликом или
-              текстовой подписью, чтобы усилить эффект
-          </p>
-        </li>
-        <li>
-          <h2 class="features__title">Заводит новых друзей</h2>
-          <p class="features__text">
-            Ставьте лайки, комментируте,
-              делитесь фотографиями с друзьями и заводите новых
-          </p>
-        </li>
+      <ul class="features__description clearfix">
+        <div class="features__content-wrap">
+          <li>
+            <h2 class="features__title">Поднимает настроение</h2>
+            <p class="features__text">
+              Приложение позволит вам победить
+                осеннюю хандру и деперессию
+                буквально в несколько кликов!
+            </p>
+          </li>
+          <li>
+            <h2 class="features__title">Меняет мир вокруг</h2>
+            <p class="features__text">
+              Сделайте снимок и украсьте его смайликом или
+                текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li>
+            <h2 class="features__title">Заводит новых друзей</h2>
+            <p class="features__text">
+              Ставьте лайки, комментируте,
+                делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </div>
+        <div class="features__description-bg">
+          <!-- фон "розовый телефон" в блоке description -->
+        </div>
       </ul>
     </section>
     <!-- end features -->
+    <!-- begin sipid-data  -->
+    <article class="sipid-data clearfix">
+      <div class="sipid-data__clock">24</div>
+      <div class="sipid-data__recital">
+        <div class="sipid-data__title">Эффект <br>на 24 часа</div>
+        <p class="sipid-data__text">
+          Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится
+          целые сутки!
+        </p>
+        <a href="/" class="sipid-data__link">Узнать больше об исследовании</a>
+      </div>
+    </article>
+    <!-- end sipid-data -->
     <!-- begin reviews  -->
     <article class="reviews">
       <div class="reviews__slider">
@@ -120,32 +146,70 @@
     <!-- begin variant  -->
     <article class="variant">
       <div class="variant__slides">
-        <!-- begin variant-slide  -->
-        <div class="variant__slide">
-          <div class="variant__head">
-            <img src="img/ico-hit.png" class="variant__img" width="74" height="73" alt="хит">
-            <div class="variant__descrip">
-              <p class="variant__title">Стандарт</p>
-              <div class="variant__price">3.99$</div>
-            </div>
-          </div>
-
-          <ul class="variant__option">
-            <li class="clearfix">
-              <p class="variant__text">розовый фильтр</p>
-              <img src="img/ico-yes.png" alt="да" width="29" height="22" class="variant__ico"></li>
-
-            <li class="clearfix">
-              <p class="variant__text">смайлики</p>
-              <img  src="img/ico-yes.png" alt="да" width="29" height="22" class="variant__ico"></li>
-
-            <li class="clearfix">
-              <p class="variant__text">комментарии</p>
-              <img src="img/ico-no.png" alt="нет" width="26" height="26" class="variant__ico"></li>
-
-          </ul>
-        </div>
-        <!-- end variant-slide  --> </div>
+      <table class="variant__table">
+        <tr>
+          <th></th>
+          <th class="variant__table-title">
+            <p class="variant__title">База</p>
+            <div class="variant__price">1.99 USD</div>
+          </th>
+          <th class="variant__table-title variant__table-title--item">
+            <img src="img/ico-hit-tablet.png" class="variant__img" width="60" height="60" alt="хит">
+            <p class="variant__title">Стандарт</p>
+            <div class="variant__price">3.99 USD</div>
+          </th>
+          <th class="variant__table-title">
+            <p class="variant__title">Анлим</p>
+            <div class="variant__price">3.99 USD</div>
+          </th>
+        </tr>
+        <tr>
+          <td class="variant__caption">Розовый фильтр</td>
+          <td class="variant__mark">
+            <span class="variant__caption-mobile">Розовый фильтр</span>
+            <img src="img/ico-yes.png" alt="да" width="29" height="22" class="variant__ico">
+          </td>
+          <td class="variant__mark">
+            <span class="variant__caption-mobile">Розовый фильтр</span>
+            <img src="img/ico-yes.png" alt="да" width="29" height="22" class="variant__ico">
+          </td>
+          <td class="variant__mark">
+            <span class="variant__caption-mobile">Розовый фильтр</span>
+            <img src="img/ico-yes.png" alt="да" width="29" height="22" class="variant__ico">
+          </td>
+        </tr>
+        <tr>
+          <td class="variant__caption">Смайлики</td>
+          <td class="variant__mark">
+            <span class="variant__caption-mobile">Смайлики</span>
+            <img src="img/ico-no.png" alt="нет" width="26" height="26" class="variant__ico">
+          </td>
+          <td class="variant__mark">
+            <span class="variant__caption-mobile">Смайлики</span>
+            <img src="img/ico-no.png" alt="нет" width="26" height="26" class="variant__ico">
+          </td>
+          <td class="variant__mark">
+            <span class="variant__caption-mobile">Смайлики</span>
+            <img src="img/ico-yes.png" alt="да" width="29" height="22" class="variant__ico">
+          </td>
+        </tr>
+        <tr>
+          <td class="variant__caption">Комментарии</td>
+          <td class="variant__mark">
+            <span class="variant__caption-mobile">Комментарии</span>
+            <img src="img/ico-no.png" alt="нет" width="26" height="26" class="variant__ico">
+          </td>
+          <td class="variant__mark">
+            <span class="variant__caption-mobile">Комментарии</span>
+            <img src="img/ico-no.png" alt="нет" width="26" height="26" class="variant__ico">
+          </td>
+          <td class="variant__mark">
+            <span class="variant__caption-mobile">Комментарии</span>
+            <img src="img/ico-no.png" alt="нет" width="26" height="26" class="variant__ico">
+          </td>
+        </tr>
+      </table>
+      </div>
       <ul class="slider-switch">
         <li class="slider-switch__li"></li>
         <li class="slider-switch__li slider-switch__li--active"></li>
@@ -156,20 +220,22 @@
     <!-- begin contact  -->
     <section class="contact">
       <div class="contact__head">
-        <div class="contact__head-title">ОСТАЛИСЬ ВОПРОСЫ?</div>
-        <div class="contact__head-title">СВЯЖИТЕСЬ С НАМИ</div>
+        <div class="contact__head-title">Остались вопросы?</div>
+        <div class="contact__head-title">Свяжитесь с нами</div>
       </div>
       <!-- begin contact-types -->
       <ul class="contact__types">
-        <li>
-          <h2 class="contact__title">Звоните</h2>
-          <p class="contact__text">+7 (812) 555-66-66</p>
-        </li>
-        <li>
-          <h2 class="contact__title">Пишите</h2>
-          <a class="contact__text contact__text--link" href="/">mail@htmlacademy.ru</a>
-        </li>
-        <li>
+        <div class="contact__wrap-column clearfix">
+          <li class="contact__left-column">
+            <h2 class="contact__title">Звоните</h2>
+            <p class="contact__text">+7 (812) 555-66-66</p>
+          </li>
+          <li class="contact__right-column">
+            <h2 class="contact__title">Пишите</h2>
+            <a class="contact__text contact__text--link" href="/">mail@htmlacademy.ru</a>
+          </li>
+        </div>
+        <li class="contact__center-column">
           <h2 class="contact__title">Приезжайте в гости:</h2>
           <p class="contact__text">
             ул. Большая
@@ -182,6 +248,25 @@
     </div>
   </section>
   <!-- end contact -->
+  <!-- begin footer-main  -->
+  <footer class="footer-main clearfix">
+    <a href="/" class="footer-main__logo">
+      <img src="img/footer-logo.png" alt="логотип" width="145" height="40">
+    </a>
+
+    <div class="social-btn">
+      <a href="/" class="social-btn__ico social-btn__ico--tw">tw</a>
+      <a href="/" class="social-btn__ico social-btn__ico--fb">fb</a>
+      <a href="/" class="social-btn__ico social-btn__ico--yt">yt</a>
+    </div>
+
+    <div class="footer-main__design">
+      Разработано
+      <a href="/" class="footer-main__ref">
+        <img src="img/logo-academy.png" alt="htmlacademy" width="27" height="34" class="footer-main__img"></a>
+    </div>
+  </footer>
+<!-- end footer-main -->
 </div>
 <!-- end index-wrap -->
 </body>
