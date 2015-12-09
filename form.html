@@ -13,7 +13,10 @@
       <section class="header-main__top-line clearfix">
         <div class="logo">
           <a href="/">
-            <img class="logo__img" src="img/logo.png">
+            <picture>
+              <source media="(min-width:700px)" srcset="img/logo-pink-tablet.png">
+              <img class="logo__img" src="img/logo.png">
+            </picture>
           </a>
         </div>
 
@@ -68,7 +71,7 @@
       </fieldset>
 
       <fieldset class="form__block form__block--radio-btn">
-        <div class="form__legend" align="center">С каким приложением путешествовали? *</div>
+        <legend class="form__legend" align="center">С каким приложением путешествовали? *</legend>
         <div class="form__wrap-app">
           <input type="radio" name="app" value="pink-ios" id="pink-ios" class="form__ios form__app-check" checked>
           <label for="pink-ios">Pink для iOS</label>
@@ -86,7 +89,7 @@
       </fieldset>
 
       <fieldset class="form__block form__block--center clearfix">
-        <div class="form__legend">Когда вы путешествовали?*</div>
+        <legend class="form__legend" align="center">Когда вы путешествовали?*</legend>
 
         <div class="form__wrap-date">
           <input type="text" id="date-exit" placeholder="1 апреля 2015" class="form__date">
@@ -109,11 +112,11 @@
       </fieldset>
 
           <fieldset class="form__block form__block--viators">
-            <div for="quantity-viators" class="form__sign form__sign--viators-label">Количество попутчиков *</div>
+            <legend for="quantity-viators" class="form__legend" align="center">Количество попутчиков *</legend>
 
             <div class="form__count-wrap form__count-wrap--viators">
               <button class="form__button form__button--right"></button>
-              <input type="text" id="quantity-viators" placeholder="2 чел" class="form__count">
+              <input type="text" id="quantity-viators" placeholder="2 чел" class="form__count form__count--border">
               <button class="form__button form__button--left"></button>
             </div>
 
@@ -147,8 +150,8 @@
               <input type="text" id="alias-viators" class="form__alias" placeholder="Ну как же без этого!"></div>
           </fieldset>
 
-          <fieldset class="form__block">
-            <div class="form__legend">Ваши безбашенные достижения в путешествии</div>
+          <fieldset class="form__block form__block--checkbox">
+            <legend class="form__legend" align="center">Ваши безбашенные достижения в путешествии</legend>
             <div class="form__check-wrap">
               <input type="checkbox" id="selfi-shark" name="selfi-shark" class="form__check">
               <label for="selfi-shark" class="form__check-label">Сделал селфи с акулой</label>
@@ -181,13 +184,13 @@
           </fieldset>
 
           <fieldset class="form__block form__block--bg-gray">
-            <div class="form__legend">Ваши фотографии из поездки *</div>
+            <legend class="form__legend" align="center">Ваши фотографии из поездки *</legend>
             <button class="form__foto-btn">Загрузить фото</button>
 
             <div class="form__upload">
 
               <div class="form__img-wrap">
-                <img src="img/bg1-header-main.jpg" alt="фото" class="form__img">
+                <img src="img/upload-img1-tablet.jpg" alt="фото" class="form__img">
                 <figcaption>img-4.jpg</figcaption>
               </div>
               <div class="form__img-wrap">
@@ -218,7 +221,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__block">
+          <fieldset class="form__block form__block--btn-shipment">
             <input type="submit" value="отправить форму" class="form__btn-shipment">
             <p class="form__note">
               <span>*</span>
@@ -228,7 +231,7 @@
         </form>
         <!-- end form -->
         <!-- begin footer-main  -->
-        <footer class="footer-main">
+        <footer class="footer-main clearfix footer-main--form">
           <a href="/" class="footer-main__logo">
             <img src="img/footer-logo.png" alt="логотип" width="145" height="40"></a>
 
