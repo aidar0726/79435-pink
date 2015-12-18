@@ -38,8 +38,24 @@
 @media (min-width: @screen_md) {
   .contact {
 
-    &__wrap-column {
-      margin-bottom: 30px;
+    &__title {
+      margin-bottom: 5px;
+    }
+
+    &__types {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      .box-sizing();
+    }
+
+    &__center-column {
+      order: 1;
     }
 
     &__head {
@@ -56,14 +72,55 @@
     }
 
     &__left-column {
-      float: left;
       width: 50%;
     }
 
     &__right-column {
-      float: right;
-      width: 50%;
+       width: 50%;
     }
 
   }
 }
+
+@media (min-width: @screen_ds) {
+  .contact {
+
+     &__title {
+      margin-bottom: 20px;
+    }
+
+    &__types {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    &__head-title {
+      font: @font_50-55;
+      font-weight: @light;
+
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__left-column {
+      width: 33.3333%;
+    }
+
+    &__right-column {
+      width: 33.3333%;
+    }
+
+    &__center-column {
+      width: 33.3333%;
+      order: 0;
+    }
+
+  }
+}
+

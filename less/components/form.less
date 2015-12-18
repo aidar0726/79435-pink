@@ -4,6 +4,14 @@
     display: none;
   }
 
+  &__user-wrap {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &__wrap-tablet {
     float: right;
     margin-bottom: 15px;
@@ -46,8 +54,8 @@
       padding-top: 45px;
 
       label {
+        margin-left: 15px;
         margin-bottom: 5px;
-
       }
     }
 
@@ -69,42 +77,57 @@
     }
   }
 
-  &__inner {
-    position: relative;
-    padding-left: 61px;
+  &__viators-forename {
     margin-bottom: 20px;
+    font-size: 0;
+    width: 280px;
+  }
+
+  &__num-wrap {
+    text-align: center;
+    width: 60px;
+    .box-sizing();
+    float: left;
+  }
+
+  &__symbol-num {
+    display: block;
+    font: @font_14-30;
+    margin-bottom: 5px;
+    color: @color_form_sign;
+  }
+
+  &__num {
+    display: inline-block;
+    vertical-align: top;
+    background: @color_gradient;
+    font: @font_18-30;
+    color: @color_form_text;
+    border: 2px solid @color_circle;
+    border-right: none;
+    background: @color_gradient;
+    padding: 15px;
+    padding-right: 17px;
+    .box-sizing();
+    width: 100%;
+  }
+
+  &__name-wrap {
+    .name-wrap();
+    float: right;
   }
 
   &__name {
     .viators-input();
   }
 
-  &__num {
-    font: @font_18-30;
-    color: @color_form_text;
-    .box-sizing();
-    position: absolute;
-    text-align: center;
-    padding: 15px;
-    border-right: none;
-    border: 2px solid @color_circle;
-    border-right: none;
-    background: @color_gradient;
-    width: 61px;
-    left: 0;
-    top: 0;
-  }
-
-  &__symbol-num {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 27px;
-    margin-right: 33px;
+  &__alias-wrap {
+    .name-wrap();
+    margin-left: 60px;
   }
 
   &__alias {
     .viators-input();
-    margin-left: 61px;
   }
 
   &__app-check {
@@ -249,11 +272,6 @@
 
   &__user-info {
     .form_input();
-    margin-bottom: 20px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   &__check-wrap {
@@ -316,6 +334,10 @@
 
     span {
       color: @color_form_sign;
+    }
+
+    i {
+      display: none;
     }
   }
 
@@ -446,7 +468,7 @@
 
     &__link-delete {
       display: block;
-      padding-top: 15px;
+      padding-top: 50px;
       text-decoration: none;
       font: @font_14-30;
       color: @bg_variant_head;
@@ -460,8 +482,8 @@
     }
 
     &__text {
-      padding: 80px 100px 0 100px;
-      font: @font_14-30;
+      padding: 80px 50px 0 50px;
+      font: @font_18-30;
       text-align: center;
       color: @color_form_text;
     }
@@ -501,26 +523,28 @@
       margin-bottom: 0;
     }
 
-    &__name {
-      width: 300px;
-      margin-left: 20px;
+    &__viators-forename {
+      width: 383px;
     }
 
-    &__alias {
+    &__viators-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__name-wrap {
       width: 300px;
-      margin-left: 80px;
+      margin-left: 20px;
     }
 
     &__num {
       border-right: 2px solid @color_circle;
     }
 
-    &__symbol-num {
-      margin-right: 50px;
-    }
-
-    &__form__sign {
-      margin-right: 95px;
+    &__alias-wrap {
+      width: 300px;
+      margin-left: 82px;
     }
 
     &__foto-btn {
@@ -534,5 +558,203 @@
     }
   }
 }
+
+@media (min-width: @screen_ds) {
+  .form {
+    padding: 0;
+
+    &__text {
+      padding-bottom: 20px;
+    }
+
+    &__check-wrap {
+      display: inline-block;
+      vertical-align: top;
+      width: 30%;
+      margin-right: 5%;
+
+      &:nth-child(3n+1) {
+        margin-right: 0;
+      }
+    }
+
+    &__wrap-app {
+      display: inline-block;
+      vertical-align: top;
+      width: 30%;
+      margin-right: 5%;
+      margin-bottom: 10px;
+
+      &:nth-child(3n+1) {
+        margin-right: 0;
+      }
+    }
+
+    &__user-wrap {
+      display: inline-block;
+      width: 30%;
+      margin-right: 5%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__img {
+      max-width: 100%;
+    }
+
+    &__btn-shipment {
+      margin-bottom: 0;
+    }
+
+    &__count {
+
+      &--border {
+        border: none;
+      }
+    }
+
+    &__block {
+      padding: 40px 60px 40px 60px;
+      margin-bottom: 40px;
+      border: 2px solid @color_circle;
+
+      &--center {
+        padding-top: 45px;
+        font-size: 0;
+      }
+
+      &--checkbox {
+        font-size: 0;
+        padding-bottom: 10px;
+      }
+
+      &--first {
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+        margin-bottom: 0;
+        font-size: 0;
+      }
+
+      &--btn-shipment {
+        padding: 0;
+        border: none;
+      }
+
+      &--viators {
+        background: @white;
+        padding-top: 35px;
+      }
+
+      &--radio-btn {
+        background: @white;
+        padding-top: 35px;
+        font-size: 0;
+      }
+
+      &--bg-gray {
+        background: @white;
+      }
+    }
+
+
+    &__img-wrap {
+      width: 120px;
+      height: 120px;
+      border: 1px solid blue;
+      margin-right: 50px;
+
+      &:nth-child(3n) {
+        margin-right: 50px;
+      }
+
+      &:last-child {
+        margin-bottom: 45px;
+      }
+
+      &:nth-child(5n) {
+        margin-right: 0px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &__note {
+
+      i {
+        display: inline;
+        font-style: normal;
+      }
+    }
+
+    &__count-wrap {
+      width: 250px;
+
+      &--viators {
+        margin-top: 0;
+
+        &:before {
+          width: 820px;
+        }
+      }
+    }
+
+    &__date {
+      width: 240px;
+    }
+
+    &__user-info {
+      width: 100%;
+    }
+
+    &__wrap-tablet {
+      display: inline-block;
+      float: none;
+      margin-right: 42px;
+    }
+
+    &__wrap-last {
+      display: inline-block;
+      margin-top: 0;
+      float: none;
+    }
+
+    &__wrap-date {
+      display: inline-block;
+      float: none;
+      margin-right: 42px;
+    }
+
+    &__viators-info {
+      flex-wrap: nowrap;
+      margin-bottom: 0;
+    }
+
+    &__link-delete {
+      order: 1;
+    }
+
+    &__alias-wrap {
+      direction: 0;
+      margin-left: 0;
+    }
+
+    &__foto-btn {
+      width: 100%;
+    }
+
+    &__legend {
+      margin-bottom: 0;
+      padding: 0 25px;
+      position: static;
+    }
+  }
+}
+
 
 

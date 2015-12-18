@@ -82,7 +82,7 @@
 /* общие стили для инпутов секции количество путеш-ов страницы с формой */
 .viators-input() {
   font: @font_18-30;
-  width: 219px;
+  width: 100%;
   border: 2px solid @color_circle;
   padding: 15px;
   .box-sizing();
@@ -108,4 +108,12 @@
   color: @color_header_title;
   padding: 0 15px;
   padding-bottom: 30px;
+}
+
+/* примесь для обертки инпутов в блоке viators */
+.name-wrap() {
+  display: inline-block;
+  vertical-align: top;
+  .box-sizing();
+  width: 220px;
 }

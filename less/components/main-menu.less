@@ -1,4 +1,5 @@
 .main-menu {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -43,4 +44,45 @@
     }
   }
 
+}
+
+@media (min-width: @screen_ds) {
+  .main-menu {
+    padding-top: 5px;
+    display: block;
+    text-transform: none;
+    float: right;
+    position: relative;
+
+    li {
+      margin-right: 70px;
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      max-width: 320px;
+      padding: 10px 0;
+      background: @bg_color_main-menu;
+      border-bottom: none;
+      border-top: none;
+      background: none;
+
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+
+    &__link {
+      display: block;
+      font: @font_18-18;
+      font-weight: normal;
+      color: @white;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+  }
 }

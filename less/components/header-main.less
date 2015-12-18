@@ -41,6 +41,7 @@
 @media (min-width: @screen_md) {
   .header-main{
     height: 720px;
+    background:url(../img/background-tablet@1x.jpg) no-repeat center top;
 
     &--for-form {
       height: auto;
@@ -76,8 +77,45 @@
       padding-bottom: 15px;
       width: 245px;
       margin-left: 40px;
-
     }
   }
 }
 
+@media (min-width: @screen_ds) {
+  .header-main {
+    height: 825px;
+    background:url(../img/background-desktop.jpg) no-repeat center bottom;
+
+    &--for-form {
+      height: auto;
+      padding-bottom: 100px;
+      background:url(../img/background-desktop.jpg) no-repeat center top;
+    }
+
+    &__title-form {
+      font: @font_50-55;
+      font-weight: @light;
+    }
+
+
+    &__btn {
+      display: none;
+    }
+
+    &__bg-hand {
+      background: url(../img/iphone-hand-desktop@1x.png) no-repeat center bottom;
+      width: 720px;
+      height: 650px;
+      position: absolute;
+      top: 175px;
+      left: 280px;
+    }
+
+    &__title {
+      font: @font_50-55;
+      font-weight: @light;
+      margin-left: 13px;
+      margin-bottom: 25px;
+    }
+  }
+}

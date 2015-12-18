@@ -29,7 +29,7 @@
 
     &__logo {
       text-align: left;
-      width: 30.333%;
+      width: 33.333%;
       display: block;
       float:left;
       margin-bottom: 0;
@@ -41,10 +41,27 @@
       display: block;
       font: @font_14-18;
       color: @color_form_text;
-      width: 30.333%;
+      width: 33.333%;
       text-align: right;
       padding-top: 10px;
     }
   }
+}
 
+@media (min-width: @screen_ds) {
+  .footer-main {
+    padding: 40px 20px;
+
+    &__logo {
+      width: 35.333%;
+    }
+
+     &__design {
+      width: 30.333%;
+     }
+
+    &--form {
+        padding: 20px 0;
+      }
+  }
 }
