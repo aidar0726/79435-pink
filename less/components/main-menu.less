@@ -28,6 +28,14 @@
     font-weight: bold;
     color: @white;
     text-decoration: none;
+
+    &:hover {
+      color: #c22b55;
+    }
+
+    &:active {
+      opacity: .3;
+    }
   }
 
   &__btn {
@@ -83,6 +91,16 @@
       color: @white;
       text-decoration: none;
       text-transform: capitalize;
+      padding-bottom: 10px;
+
+      &:hover {
+        color: @white;
+        box-shadow: 0 2px 0 @white;
+      }
+
+      &:active {
+        box-shadow: none;
+      }
     }
   }
 }

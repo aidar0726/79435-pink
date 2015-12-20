@@ -119,6 +119,14 @@
 
   &__name {
     .viators-input();
+
+    &:hover {
+      border-color: @color_form_text;
+    }
+
+    &:focus {
+      border-color: @color_form_sign;
+    }
   }
 
   &__alias-wrap {
@@ -128,6 +136,14 @@
 
   &__alias {
     .viators-input();
+
+    &:hover {
+      border-color: @color_form_text;
+    }
+
+    &:focus {
+      border-color: @color_form_sign;
+    }
   }
 
   &__app-check {
@@ -154,6 +170,14 @@
   &__wrap-app {
     margin-bottom: 35px;
 
+    label:hover:before {
+      border-color: @bg_color_main-menu;
+    }
+
+    label:active:before {
+      border-color: @color_form_sign;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -163,9 +187,25 @@
   &__date {
     .form_input();
 
+    &:hover {
+      border-color: @color_form_text;
+    }
+
+    &:focus {
+      border-color: @color_form_sign;
+    }
+
     &--return {
       background: @bg_radio_btn;
     }
+
+      &:hover {
+        border-color: @bg_radio_btn;
+      }
+
+      &:focus {
+        border-color: none;
+      }
   }
 
   &__text {
@@ -223,6 +263,14 @@
     padding: 15px 60px;
     text-align: center;
     .box-sizing();
+
+    &:hover {
+      border-color: @color_border_input;
+    }
+
+     &:active {
+      border-color: @color_border_input;
+    }
   }
 
   &__button {
@@ -233,6 +281,22 @@
     height: 100%;
     display: inline-block;
     position: absolute;
+
+    &:hover {
+      border-color: @features_text;
+    }
+
+    &:active {
+      background: @features_text;
+    }
+
+    &:active:before {
+      background: white;
+    }
+
+    &:active:after {
+      background: white;
+    }
 
     &--right {
       top: 0;
@@ -272,13 +336,13 @@
 
   &__user-info {
     .form_input();
-  }
 
-  &__check-wrap {
-    margin-bottom: 40px;
+    &:hover {
+      border-color: @color_form_text;
+    }
 
-    &:last-child {
-      margin-bottom: 0;
+    &:focus {
+      border-color: @color_form_sign;
     }
   }
 
@@ -289,7 +353,7 @@
 
       & + label:before {
         .check-btn-castom();
-        background: url(../img/ico-check.png)no-repeat center center;
+        background: white url(../img/ico-check.png)no-repeat center center;
       }
     }
 
@@ -304,6 +368,22 @@
 
   }
 
+  &__check-wrap {
+    margin-bottom: 40px;
+
+    label:hover:before {
+      border-color: @bg_color_main-menu;
+    }
+
+    label:active:before {
+      border-color: @color_form_sign;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &__foto-btn {
     .form-btn();
     position: relative;
@@ -311,6 +391,15 @@
     color: @color_form_text;
     background: @white;
     margin-bottom: 70px;
+
+    &:hover {
+      border-color: @bg_color_main-menu;
+    }
+
+    &:active {
+      background: @bg_color_main-menu;
+      color: white;
+    }
 
     &:after {
       .horizontal-line(-32px)
@@ -324,6 +413,16 @@
     border-radius: 3px;
     border: 1px solid @bg_btn_shipment;
     margin-bottom: 40px;
+
+    &:hover {
+      background: @bg-btn-shipment-hover;
+      border-color: none;
+    }
+
+    &:active {
+      color: @color-btn-shipment-text;
+      border-color: none;
+    }
   }
 
   &__note {
@@ -354,7 +453,7 @@
     margin-bottom: 45px;
     margin-right: 39px;
 
-    &:before {
+    span {
       content: " ";
       display: block;
       cursor: pointer;
@@ -363,9 +462,57 @@
       height: 29px;
       border: 2px solid @color_circle;
       border-radius: 50%;
-      background: @white url(../img/ico-img-exit.png) no-repeat center center;
       right: -15px;
       top: -15px;
+      background: @white;
+
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 2px;
+        background: @color_circle;
+        transform: rotate(45deg);
+        top: 46%;
+        left: 26%;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 2px;
+        background: @color_circle;
+        transform: rotate(-45deg);
+        top: 46%;
+        left: 26%;
+      }
+
+      &:hover {
+        border-color: @color_form_text;
+      }
+
+      &:hover:before {
+        background: @color_form_text;
+      }
+
+      &:hover:after {
+        background: @color_form_text;
+      }
+
+      &:active {
+        background: @color_form_text;
+      }
+
+      &:active:before {
+        background: @white;
+      }
+
+      &:active:after {
+        background: @white;
+      }
     }
 
     &:nth-child(3n) {
@@ -450,7 +597,6 @@
     &__img-wrap {
       width: 120px;
       height: 120px;
-      border: 1px solid blue;
       margin-right: 60px;
 
       img {
@@ -474,6 +620,16 @@
       color: @bg_variant_head;
       float: right;
       text-transform: uppercase;
+
+      &:hover {
+        text-decoration: underline;
+        color: @color_form_sign;
+      }
+
+      &:active {
+        text-decoration: none;
+        opacity: .3;
+      }
     }
 
     &__note {
