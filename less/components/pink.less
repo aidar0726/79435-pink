@@ -1,0 +1,36 @@
+.pink {
+  display: block;
+  &__stars {
+    display: none;
+    @media (min-width: @screen_ds) {
+      display: block;
+    }
+  }
+  &__glasses {
+    display: none;
+    &--footer{
+      display: block;
+    }
+    &-color {
+
+      &--footer{
+        fill: @color_form_sign;
+      }
+    }
+    @media (min-width: @screen_md) {
+      display: block;
+    }
+  }
+  &--footer {
+    transform: none;
+  }
+  &__text {
+    transform: translate(-70px, -10px);
+    @media (min-width: @screen_md) {
+      transform: translate(0, 0);
+    }
+    &--footer {
+      transform: translate(0, 0);
+    }
+  }
+}

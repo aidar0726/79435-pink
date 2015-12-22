@@ -1,7 +1,13 @@
 .header-main {
   text-align: center;/*url(../img/bg2-header-main.png) no-repeat center bottom,*/
   position: relative;
-  background:url(../img/background-tablet@1x.jpg) no-repeat center top;
+  background:url(../img/background-mobile@1x.jpg) no-repeat center top;
+
+  @media (min-resolution: 2dppx) {
+    .header-main {
+      background:url(../img/background-mobile@2x.jpg) no-repeat center top;
+    }
+  }
 
   &__top-line {
     background: @top_line;
@@ -12,6 +18,15 @@
   &__bg-hand {
     background: url(../img/bg2-header-main.png) no-repeat center top;
     height: 295px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .header-main {
+
+      &__bg-hand {
+        background:url(../img/iphone-hand-mobile@2x.png) no-repeat center top;
+      }
+    }
   }
 
   &__title {
@@ -30,12 +45,20 @@
     border: none;
     cursor: pointer;
     color: @white;
+    padding-top: 3px;
+
+    &:hover .header-main__menu-btn {
+      fill: @color_form_sign;
+    }
+
+    &:active .header-main__menu-btn {
+      opacity: .3;
+    }
   }
 
   &__img {
     vertical-align: bottom;
   }
-
 }
 
 @media (min-width: @screen_md) {
@@ -43,13 +66,23 @@
     height: 720px;
     background:url(../img/background-tablet@1x.jpg) no-repeat center top;
 
+    @media (min-resolution: 2dppx) {
+      .header-main {
+        background:url(../img/background-tablet@2x.jpg) no-repeat center top;
+      }
+    }
+
     &--for-form {
       height: auto;
       padding-bottom: 70px;
     }
 
+    &__top-line {
+      padding-bottom: 35px;
+    }
+
     &__btn {
-      padding-top: 10px;
+      padding-top: 15px;
     }
 
     &__bg-hand {
@@ -58,6 +91,15 @@
       height: 545px;
       position: absolute;
       top: 175px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      .header-main {
+
+        &__bg-hand {
+          background:url(../img/iphone-hand-tablet@2x.png) no-repeat center top;
+        }
+      }
     }
 
     &__title-form {
@@ -92,6 +134,10 @@
       background:url(../img/background-desktop.jpg) no-repeat center top;
     }
 
+    &__top-line {
+      padding-bottom: 20px;
+    }
+
     &__title-form {
       font: @font_50-55;
       font-weight: @light;
@@ -109,6 +155,15 @@
       position: absolute;
       top: 175px;
       left: 280px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      .header-main {
+
+        &__bg-hand {
+          background:url(../img/iphone-hand-desktop@2x.png) no-repeat center top;
+        }
+      }
     }
 
     &__title {
