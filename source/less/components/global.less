@@ -1,0 +1,36 @@
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.link-svg {
+
+  &:hover .pink__text-color {
+    fill: @color_form_sign;
+  }
+
+  &:hover .pink__glasses-color {
+    fill: @color_form_sign;
+  }
+
+  &:active .pink__text-color {
+    opacity: .3;
+  }
+
+  &:active .pink__glasses-color {
+    opacity: .3;
+  }
+
+  &--header:active .pink__text-color {
+    opacity: .3;
+    fill: white;
+  }
+
+  &--header:active .pink__glasses-color {
+    opacity: .3;
+    fill: white;
+  }
+}
+

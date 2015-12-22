@@ -1,0 +1,191 @@
+.variant {
+  background-image: linear-gradient(176deg, @white 10%, @color_gradient 10%);
+  padding-top: 110px;
+  padding-bottom: 45px;
+
+  &__slides {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__caption-mobile {
+    display: block;
+    font: @font_14-30;
+    text-transform: uppercase;
+    color: @color_form_text;
+    float: left;
+    margin-left: 10px;
+  }
+
+  &__ico {
+    display: block;
+    float: right;
+    margin-right: 10px;
+  }
+
+  &__caption {
+    display: none;
+    font: @font_14-30;
+    text-align: left;
+    .box-sizing();
+    width: 157px;
+    height: 45px;
+    color: @color_form_text;
+    padding: 10px;
+    padding-left: 15px;
+  }
+
+  &__mark {
+    text-align: center;
+    padding: 10px;
+    .box-sizing();
+  }
+
+  &__table {
+    outline: 1px solid red;
+    width: 840px;
+    background: @white;
+    left: -260px;
+    position: relative;
+
+    th:first-child {
+      display: none;
+      background: @bg_radio_btn;
+    }
+
+    td {
+      border: 1px solid @color_circle;
+    }
+  }
+
+  &__table-title {
+    text-align: center;
+    background: @features_text;
+    width: 280px;
+    height: 100px;
+    .box-sizing();
+    position: relative;
+    border-left: 1px solid @white;
+    border-right: 1px solid @white;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__title {
+    font: @font_16-30;
+    font-weight: @bold;
+    color: @white;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font: @font_18-30;
+    font-weight: @light;
+    color: @color_price;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: @screen_md) {
+  .variant {
+    background-image: linear-gradient(176deg, @white 10%, @color_gradient 10%);
+    padding-top: 110px;
+    padding-bottom: 45px;
+    padding: 110px 40px 45px 40px;
+
+    &__caption-mobile {
+      display: none;
+    }
+
+
+    &__caption {
+      display: table-cell;
+      font: @font_14-30;
+      text-align: left;
+      .box-sizing();
+      width: 157px;
+      height: 45px;
+      color: @color_form_text;
+      padding: 10px;
+      padding-left: 15px;
+    }
+
+    &__mark {
+      text-align: center;
+      padding: 10px;
+      .box-sizing();
+    }
+
+    &__ico {
+      float: none;
+      display: inline-block;
+    }
+
+    &__table {
+      outline: 1px solid red;
+      width: 100%;
+      background: @white;
+      position: static;
+
+      th:first-child {
+        display: table-cell;
+        background: @bg_radio_btn;
+      }
+
+      td {
+        display: visible;
+        border: 1px solid @color_circle;
+      }
+    }
+
+    &__table-title {
+      text-align: center;
+      background: @features_text;
+      width: 155px;
+      height: 80px;
+      .box-sizing();
+      position: relative;
+      border-left: 1px solid @white;
+      border-right: 1px solid @white;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &__title {
+      font: @font_16-30;
+      font-weight: @bold;
+      color: @white;
+      text-transform: uppercase;
+    }
+
+    &__price {
+      font: @font_18-30;
+      font-weight: @light;
+      color: @color_price;
+    }
+
+    &__img {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: @screen_ds) {
+  .variant {
+    background-image: linear-gradient(176deg, @white 20%, @color_gradient 10%);
+    padding: 180px 40px 95px 40px;
+  }
+}

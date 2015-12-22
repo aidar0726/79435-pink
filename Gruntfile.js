@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     less: {
       style: {
         files: {
-          "css/style.css": "less/style.less"
+          "build/css/style.css": "source/less/style.less"
         }
       }
     },
@@ -21,8 +21,13 @@ module.exports = function(grunt) {
         ]
       },
       style: {
-        src: "css/*.css"
+        src: "build/css/style.css"
       }
+    },
+
+    clean: {
+      build: ["build"],
+      watch_html: ["build/*.html"],
     },
 
     watch: {
@@ -34,9 +39,88 @@ module.exports = function(grunt) {
           livereload: true
         }
       }
+    },
+    copy:{
+      build:{
+        files:[{
+          expand: true,
+          cwd: "source",
+          src: [
+            "img/**",
+            "index.html",
+            "form.html",
+            "less/**"
+          ],
+          dest: "build"
+        }]
+        }
+      },
+    cmq:{
+    style:{
+      file:{
+        "build/css/style.css":["build/css/style.css"]
+      }
     }
+  },
+    cssmin:{
+      options:{
+        keepSpecialComments: 0,
+        report: "gzip"
+      },
+      style:{
+        files:{
+          "build/css/style.min.css":["build/css/style.css"]
+        }
+      }
+    },
+    imagemin:{
+      images:{
+        options:{
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          src: ["build/img/**/*.{png,jpg,gif,svg}"]
+        }]
+      }
+    },
+    htmlmin:{
+      options:{
+        removeComments: true,
+        collapseWhitespace: true,
+        collapseBooleanAttributes: true,
+        caseSensitive: true,
+        keepClosingSlash: false
+      },
+      html:{
+        files:{
+          "build/index.min.html":["build/index.html"],
+          "build/form.min.html":["build/form.html"]
+        }
+      }
+    },
+    uglify: {
+      script: {
+        files: {
+          "build/js/script.min.js": ["build/js/script.js"]
+        }
+      }
+    },
   };
-  
+  grunt.registerTask("build",[
+    "clean",
+    "copy",
+    "less",
+    "postcss",
+    "cmq",
+    "cssmin",
+    "imagemin",
+    "htmlmin",
+    "uglify"
+  ]);
+
+
+
 
 
   // Не редактируйте эту строку

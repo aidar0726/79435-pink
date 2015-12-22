@@ -1,0 +1,119 @@
+/* значения для инпутов формы*/
+.form_input() {
+  width: 280px;
+  font: @font_18-30;
+  color: @color_form_text;
+  border: 2px solid @color_border_input;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* значения для label и legend формы */
+.legend-label() {
+  color: @color_form_sign;
+  text-transform: uppercase;
+}
+
+/* кастомный кружок радиокнопки на странице с формой */
+.radio-btn-castom() {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border: 2px solid @color_circle;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+
+/* кастомный квадрат чекбокса на странице с формой */
+.check-btn-castom() {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid @color_circle;
+  left: 0;
+  top: 0;
+}
+
+/* кастомные '+' и '-' на странице с формой */
+.castom-signs(@width,@height) {
+  content: "";
+  position: absolute;
+  width: @width;
+  height: @height;
+  background: @bg_color_main-menu;
+}
+
+/* примесь-префиксы для свойства box-sizing */
+.box-sizing() {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* общий стиль кастомных чекбоксов и радиокнопок на странице с формой */
+.label-check-radio() {
+  position: relative;
+  padding-left: 60px;
+  color: @color_form_text;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* общие стили для кнопок отправки формы  и загрузки изображениея */
+.form-btn() {
+  display: inline-block;
+  vertical-align: middle;
+  font: @font_18-30;
+  font-weight: @bold;
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px;
+  height: 63px;
+  cursor: pointer;
+  .box-sizing();
+}
+
+/* общие стили для инпутов секции количество путеш-ов страницы с формой */
+.viators-input() {
+  font: @font_18-30;
+  width: 100%;
+  border: 2px solid @color_circle;
+  padding: 15px;
+  .box-sizing();
+  background: @white;
+}
+
+/* примесь для декоративной серой гориз-ой линии страницы с формой*/
+.horizontal-line(@y) {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: @color_circle;
+  left: 0;
+  bottom: @y;
+}
+
+/* Заголовок хедера главной и страницы формы */
+.header-title() {
+  font: @font_24-24;
+  font-weight: @light;
+  color: @color_header_title;
+  padding: 0 15px;
+  padding-bottom: 30px;
+}
+
+/* примесь для обертки инпутов в блоке viators */
+.name-wrap() {
+  display: inline-block;
+  vertical-align: top;
+  .box-sizing();
+  width: 220px;
+}

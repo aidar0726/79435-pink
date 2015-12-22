@@ -1,0 +1,95 @@
+.download {
+  background: @bg_download;
+  color: @white;
+  text-align: center;
+  padding: 20px;
+
+  &__btn {
+    display: inline-block;
+    width: 280px;
+    border: 3px solid @white;
+    border-radius: 25px;
+    padding: 10px 0;
+    font: @font_18-18;
+    font-weight: @bold;
+    color: @white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    .box-sizing();
+
+    &:hover {
+      background: @white;
+      color: @color_form_sign;
+    }
+
+    &:active {
+      background: @white;
+      opacity: .3;
+    }
+  }
+
+  &__system {
+    font-size: 0;
+    margin-bottom: 15px;
+    vertical-align: center;
+  }
+
+  &__text {
+    font: @font_14-24;
+    color: @color_download_text;
+  }
+
+  img {
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+}
+
+@media (min-width: @screen_md) {
+  .download {
+    width: 320px;
+    background: transparent;
+    position: relative;
+    float: left;
+
+    &__text {
+      font: @font_18-24;
+      color: @white;
+      font-weight: @light;
+    }
+
+    &__btn {
+      margin-bottom: 45px;
+    }
+
+    &__system {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: @screen_ds) {
+  .download {
+    padding-left: 0;
+    width: 300px;
+
+    &__btn {
+      width: 300px;
+      padding: 15px 0;
+      font: @font_21-18;
+      font-weight: bold;
+      margin-bottom: 60px;
+    }
+
+     &__system {
+      margin-bottom: 60px;
+    }
+  }
+}

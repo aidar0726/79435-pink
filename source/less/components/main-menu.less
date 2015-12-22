@@ -1,0 +1,139 @@
+.main-menu {
+  display: none;
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 0;
+  text-transform: lowercase;
+
+  li {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    background: @bg_color_main-menu;
+    border-bottom: 1px solid @color_border_bottom;
+    border-top: 1px solid @color_border_top;
+
+    &:first-child {
+      padding: 20px 0;
+    }
+
+  }
+
+  &__link {
+    display: block;
+    font: @font_18-32;
+    font-weight: bold;
+    color: @white;
+    text-decoration: none;
+
+    &:hover {
+      color: #c22b55;
+    }
+
+    &:active {
+      opacity: .3;
+    }
+  }
+
+  &__btn {
+    float: right;
+    display: block;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: @white;
+
+
+    &--right {
+      margin-right: 15px;
+      padding-top: 3px;
+
+      &:hover .header-main__menu-btn {
+        fill: @color_form_sign;
+      }
+
+      &:active .header-main__menu-btn {
+        opacity: .3;
+      }
+    }
+  }
+
+}
+
+@media (min-width: @screen_md) {
+  .main-menu {
+
+    li {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0;
+      background: @bg_color_main-menu;
+      border-bottom: 1px solid @color_border_bottom;
+      border-top: 1px solid @color_border_top;
+
+      &:first-child {
+        padding: 30px 0;
+      }
+
+    }
+  }
+}
+
+@media (min-width: @screen_ds) {
+  .main-menu {
+    padding-top: 5px;
+    display: block;
+    text-transform: none;
+    float: right;
+    position: relative;
+    width: auto;
+    max-width: 700px;
+
+
+    li {
+      margin-right: 70px;
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      max-width: 320px;
+      padding: 10px 0;
+      background: @bg_color_main-menu;
+      border-bottom: none;
+      border-top: none;
+      background: none;
+
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+
+    &__link {
+      display: block;
+      font: @font_18-18;
+      font-weight: normal;
+      color: @white;
+      text-decoration: none;
+      text-transform: capitalize;
+      padding-bottom: 10px;
+
+      &:hover {
+        color: @white;
+        box-shadow: 0 2px 0 @white;
+      }
+
+      &:active {
+        box-shadow: none;
+      }
+    }
+  }
+}
